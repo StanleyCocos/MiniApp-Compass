@@ -1,5 +1,13 @@
 <!--客服中心页面-->
-<view class="page">
+<view class="page-wrapper">
+  <!-- 自定义导航栏 -->
+  <view class="custom-navbar">
+    <view class="navbar-content">
+      <button class="back-btn" bindtap="handleBack">返回</button>
+    </view>
+  </view>
+
+  <view class="page">
   <!-- 欢迎区 -->
   <view class="welcome-section">
     <view class="welcome-avatar"></view>
@@ -89,5 +97,6 @@
       <text class="btn-icon">🎧</text>
       <text class="btn-text">在線客服</text>
     </view>
+  </view>
   </view>
 </view>

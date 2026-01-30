@@ -1,6 +1,5 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText": "客服中心",
-  "navigationBarBackgroundColor": "#6eb5e8",
-  "navigationBarTextStyle": "white"
+  "navigationStyle": "custom",
+  "navigationBarHidden": true,
+  "usingComponents": {}
 }

@@ -1,7 +1,17 @@
 <!--index.ftml-->
-<view class="container">
-  <view class="usermotto" bindtap="bindViewTap">
-    <text class="user-motto">{{motto}}</text>
+<view class="page">
+  <!-- 自定义导航栏 -->
+  <view class="custom-navbar">
+    <view class="navbar-content">
+      <button class="back-btn" bindtap="handleBack">返回</button>
+    </view>
   </view>
-  <button class="nav-btn" bindtap="goCustomerService">進入客服中心</button>
+  
+  <!-- 页面内容 -->
+  <view class="container">
+    <view class="usermotto" bindtap="bindViewTap">
+      <text class="user-motto">{{motto}}</text>
+    </view>
+    <button class="nav-btn" bindtap="goCustomerService">進入客服中心</button>
+  </view>
 </view>
