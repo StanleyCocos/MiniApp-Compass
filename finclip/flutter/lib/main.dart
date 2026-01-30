@@ -45,15 +45,18 @@ class _MyHomePageState extends State<MyHomePage> {
         'F+n25sXdp+EwCq2lqYkgSiYg4mQOWiOoXEJq3s/71nfXMUZS9co7NSiJgdEUxGIu', // SDK Key
         'd6e02c2f8db97566', // SDK Secret
         apiServer: 'https://www.finclip.com', // 服务器地址
-        apiPrefix: '/api/v1/mop' // 服务器接口请求路由前缀
+        apiPrefix: '/api/v1/mop', // 服务器接口请求路由前缀
+        userId: "e8bbf235f3d3bb9c",
     );
     print(res);
     if (!mounted) return;
   }
 
   void _incrementCounter() {
-    Mop.instance.openApplet('fc3073959758115077');
+    // Mop.instance.openApplet('fc3073959758115077');
+    Mop.instance.qrcodeOpenApplet("https://www.finclip.com/api/v1/mop/runtime/applet/-f-7bac0f58960bd247--");
   }
+
 
   @override
   Widget build(BuildContext context) {
