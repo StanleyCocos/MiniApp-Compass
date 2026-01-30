@@ -1,0 +1,7 @@
+<!--index.ftml-->
+<view class="container">
+  <view class="usermotto" bindtap="bindViewTap">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <button class="nav-btn" bindtap="goCustomerService">進入客服中心</button>
+</view>

@@ -1,0 +1,236 @@
+/** 客服中心样式 */
+.page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #b8d9f0 0%, #e8f4fc 30%);
+  padding: 24rpx;
+  padding-bottom: 180rpx;
+  box-sizing: border-box;
+}
+
+/* 欢迎区 */
+.welcome-section {
+  display: flex;
+  align-items: center;
+  padding: 32rpx 24rpx 40rpx;
+  margin: 0 -24rpx 24rpx;
+  background: linear-gradient(180deg, #a8d0ee 0%, #d4eaf7 100%);
+  border-radius: 0 0 32rpx 32rpx;
+}
+.welcome-avatar {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6eb5e8 0%, #f5a962 50%, #8b6914 100%);
+  margin-right: 24rpx;
+  flex-shrink: 0;
+}
+.welcome-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8rpx;
+}
+.welcome-line {
+  font-size: 28rpx;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* 卡片通用 */
+.card {
+  background: #fff;
+  border-radius: 24rpx;
+  padding: 28rpx 24rpx;
+  margin-bottom: 24rpx;
+  box-shadow: 0 4rpx 20rpx rgba(0, 0, 0, 0.06);
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24rpx;
+}
+.card-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+}
+.card-link {
+  font-size: 26rpx;
+  color: #f5a962;
+}
+.block-title {
+  display: block;
+  margin-bottom: 24rpx;
+}
+
+/* 自助服务网格 */
+.self-service-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24rpx 0;
+}
+.service-item {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service-icon {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 16rpx;
+  margin-bottom: 12rpx;
+}
+.icon-blue {
+  background: #6eb5e8;
+}
+.icon-orange {
+  background: #f5a962;
+}
+.icon-green {
+  background: #52c41a;
+}
+.icon-blue2 {
+  background: #5b9bd5;
+}
+.icon-orange2 {
+  background: #e8984a;
+}
+.service-label {
+  font-size: 22rpx;
+  color: #666;
+  text-align: center;
+}
+
+/* 我的申诉行 */
+.card-complaint {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.complaint-left {
+  display: flex;
+  align-items: center;
+}
+.complaint-icon {
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 50%;
+  background: #f5a962;
+  margin-right: 16rpx;
+}
+.complaint-title {
+  font-size: 28rpx;
+  color: #333;
+}
+.complaint-right {
+  display: flex;
+  align-items: center;
+  gap: 8rpx;
+}
+.complaint-badge {
+  background: #f5a962;
+  color: #fff;
+  font-size: 22rpx;
+  padding: 4rpx 16rpx;
+  border-radius: 24rpx;
+}
+.arrow {
+  font-size: 28rpx;
+  color: #999;
+}
+
+/* 标签页 */
+.tabs {
+  display: flex;
+  margin-bottom: 24rpx;
+  gap: 16rpx;
+  flex-wrap: wrap;
+}
+.tab-item {
+  font-size: 26rpx;
+  color: #666;
+  padding-bottom: 8rpx;
+}
+.tab-item.active {
+  color: #f5a962;
+  font-weight: bold;
+  border-bottom: 4rpx solid #f5a962;
+}
+
+/* FAQ 列表 */
+.faq-list {
+  border-top: 1rpx solid #eee;
+}
+.faq-item {
+  display: flex;
+  align-items: center;
+  padding: 24rpx 0;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.faq-item:last-child {
+  border-bottom: none;
+}
+.faq-num {
+  font-size: 26rpx;
+  color: #999;
+  margin-right: 12rpx;
+  flex-shrink: 0;
+}
+.faq-title {
+  flex: 1;
+  font-size: 26rpx;
+  color: #999;
+}
+.faq-title.highlight {
+  color: #f5a962;
+}
+.faq-arrow {
+  font-size: 26rpx;
+  color: #ccc;
+  margin-left: 8rpx;
+}
+
+/* 底部占位 */
+.bottom-placeholder {
+  height: 40rpx;
+}
+
+/* 底部按钮栏 */
+.bottom-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  padding: 24rpx;
+  gap: 24rpx;
+  background: #fff;
+  box-shadow: 0 -4rpx 20rpx rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+}
+.btn {
+  flex: 1;
+  height: 88rpx;
+  border-radius: 44rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12rpx;
+}
+.btn-phone {
+  background: #e0e0e0;
+  color: #333;
+}
+.btn-online {
+  background: #f5a962;
+  color: #fff;
+}
+.btn-icon {
+  font-size: 36rpx;
+}
+.btn-text {
+  font-size: 28rpx;
+}

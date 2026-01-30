@@ -1,0 +1,93 @@
+<!--客服中心页面-->
+<view class="page">
+  <!-- 欢迎区 -->
+  <view class="welcome-section">
+    <view class="welcome-avatar"></view>
+    <view class="welcome-text">
+      <text class="welcome-line">Hi~小8很高興為您服務喔!</text>
+      <text class="welcome-line">請問有什麼可以幫到您?</text>
+    </view>
+  </view>
+
+  <!-- 自助服务卡片 -->
+  <view class="card">
+    <view class="card-header">
+      <text class="card-title">自助服務</text>
+      <text class="card-link" bindtap="goHelpCenter">幫助中心 ></text>
+    </view>
+    <view class="self-service-grid">
+      <view class="service-item">
+        <view class="service-icon icon-blue"></view>
+        <text class="service-label">找回密碼</text>
+      </view>
+      <view class="service-item">
+        <view class="service-icon icon-orange"></view>
+        <text class="service-label">修改行動電話</text>
+      </view>
+      <view class="service-item">
+        <view class="service-icon icon-green"></view>
+        <text class="service-label">支付密碼</text>
+      </view>
+      <view class="service-item">
+        <view class="service-icon icon-blue2"></view>
+        <text class="service-label">修改評價</text>
+      </view>
+      <view class="service-item">
+        <view class="service-icon icon-orange2"></view>
+        <text class="service-label">付款教學</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 我的申诉卡片 -->
+  <view class="card card-complaint" bindtap="goMyComplaints">
+    <view class="complaint-left">
+      <view class="complaint-icon"></view>
+      <text class="complaint-title">我的申訴</text>
+    </view>
+    <view class="complaint-right">
+      <view class="complaint-badge">23</view>
+      <text class="arrow">></text>
+    </view>
+  </view>
+
+  <!-- 猜你想问卡片 -->
+  <view class="card">
+    <text class="card-title block-title">猜你想問</text>
+    <view class="tabs">
+      <block wx:for="{{tabs}}" wx:key="key">
+        <view
+          class="tab-item {{currentTab === item.key ? 'active' : ''}}"
+          data-key="{{item.key}}"
+          bindtap="switchTab"
+        >
+          {{item.label}}
+        </view>
+      </block>
+    </view>
+    <view class="faq-list">
+      <block wx:for="{{faqList}}" wx:key="id">
+        <view class="faq-item">
+          <text class="faq-num">{{item.id}}.</text>
+          <text class="faq-title {{item.highlight ? 'highlight' : ''}}">{{item.title}}</text>
+          <text class="faq-arrow">></text>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <!-- 底部占位，避免被按钮遮挡 -->
+  <view class="bottom-placeholder"></view>
+
+  <!-- 底部按钮 -->
+  <view class="bottom-bar">
+    <view class="btn btn-phone" bindtap="callService">
+      <text class="btn-icon">📞</text>
+      <text class="btn-text">撥打客服電話</text>
+    </view>
+    <view class="btn btn-online" bindtap="onlineService">
+      <text class="btn-icon">🎧</text>
+      <text class="btn-text">在線客服</text>
+    </view>
+  </view>
+</view>
